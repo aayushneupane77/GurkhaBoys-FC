@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gurkha Boys FC | Official Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Gurkha Boys Football Club — Passion, Discipline, Brotherhood. Based in Perth, WA.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <!-- changed code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- ...existing code... -->
 </head>
 <body>
 
@@ -13,11 +21,17 @@
     <img src="assets/logo.png" alt="Gurkha Boys FC Logo">
     <span>Gurkha Boys FC</span>
   </div>
-  <nav>
+
+  <!-- changed code -->
+  <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+    ☰
+  </button>
+  <nav id="primary-nav" class="nav">
     <a href="index.html">Home</a>
     <a href="team.html">Team</a>
     <a href="achievements.html">Achievements</a>
     <a href="contact.html">Contact</a>
+    <a href="https://www.facebook.com/share/17xUN9mhiV/?mibextid=wwXIfr" class="social" target="_blank" rel="noopener noreferrer">Facebook</a>
   </nav>
 </header>
 
@@ -48,9 +62,11 @@
 </section>
 
 <footer>
-  <p>© 2025 Gurkha Boys Football Club | Perth, WA</p>
+  <p>© <span id="year">2025</span> Gurkha Boys Football Club | Perth, WA</p>
 </footer>
 
-<script src="js/main.js"></script>
+<!-- changed code -->
+<script src="main.js"></script>
+<!-- ...existing code... -->
 </body>
 </html>
